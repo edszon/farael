@@ -55,7 +55,7 @@
 }
 
 .form input {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 1);
     border: 1px solid white;
     align-items: center;
     display: flex;
@@ -65,6 +65,15 @@
     margin-right: auto;
     border-radius: 10px;
     text-align: center;
+    color: white;
+}
+
+.form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 1) inset;
+}
+
+.form input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
 }
 
 .form div {
@@ -82,3 +91,36 @@
 .form div a:nth-of-type(2) {
     margin-left: 50px;
 }
+
+.form button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    text-align: center;
+    height: 28px;
+    width: 100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.form button img {
+    height: 30px;
+    width: 100px;
+}
+
+.glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .glow:hover, .glow:focus, .glow:active {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  }
