@@ -79,3 +79,20 @@ footer {
 	text-align: center;
 	font-family: courier new;
 }
+
+.secret{
+	margin-top:150px;
+	text-align: center;
+}
+
+#secret {
+	text-align: center;
+	color:black;
+	transition: color 1s;
+	text-align: center;
+	font-family: courier new;
+}
+
+#secret:hover {
+	color:red;
+}
