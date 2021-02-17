@@ -65,15 +65,18 @@
     border-radius: 10px;
     text-align: center;
     color: white;
-    outline: 0;
-    margin-bottom: 3px;
+    outline: 0; 
+    margin-bottom: -17px;
 }
 
 .form input:nth-of-type(2) {
     max-width: 320px;
     min-height: 30px;
     display: inline-block;
+    text-align: center;
+
     display: flex;
+    float: right;
     margin-right: auto;
     margin-left: auto;
     align-items: center;
@@ -81,15 +84,18 @@
     border: 1px solid white;
 }
 
-.i {
-    display: flex;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    flex-direction: row;
-    z-index: 999;
+.span {
     display: inline-block;
+    float: left;
+}
+
+.senha {
+    margin-top: -10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #icone {
@@ -135,7 +141,8 @@
     margin-right: auto;
     margin-top: 50px;
     border-radius: 10px;
-    outline: 0; 
+    outline: 0;
+    cursor: pointer;
 }
 
 .form button a {

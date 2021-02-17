@@ -9,3 +9,10 @@ caixa.addEventListener("keyup", function(event){
         icone.style.display="none";
     }
 });
+
+window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.querySelector("audio");
+    audio.volume = 1;
+    audio.play();
+});
+  
