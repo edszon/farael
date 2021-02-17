@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/stylelogin.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="shortcut icon" href="resources\img\paletaico.ico"/>
+    <script src="https://kit.fontawesome.com/84896c23dc.js" crossorigin="anonymous"></script>
     <title> Arael Picturs </title>
 </head>
 
@@ -29,14 +30,20 @@
         <div class="form">
             <form method="post" action="main.html">
                 <legend> LOGIN: </legend>
-                <input type="text" required name="login" size="40" maxlength="20" placeholder="Usuário">
-                <input type="password" required name="password" size="40" maxlength="20" placeholder="Senha">
-                <div>
-                    <a> Não possui cadastro? </a>
-                    <a> Esqueceu a senha? </a>
+                <input type="text" required name="login" size="40" maxlength="20" placeholder="Usuário" class="glow">
+
+                <div class="capslock"> 
+                    <input type="password" required name="password" size="40" maxlength="20" placeholder="Senha" class="glow" id="caixa">
+                    <i class="fas fa-exclamation-circle" id="icone"></i>
                 </div>
                 
-                <button type="submit" class="glow"> <a href="main.html"> ENVIAR </a> </button>
+
+                <div>
+                    <a href="fodase.html" class="underlinecenter"> Não possui cadastro? </a>
+                    <a href="fodase.html" class="underlinecenter"> Esqueceu a senha? </a>
+                </div>
+                
+                <button type="submit" class="glow"> <a> ENVIAR </a> </button>
             </form>
         </div>
     </div>
@@ -44,6 +51,8 @@
     <footer>
         <p> GPLAYS™ © Todos os direitos reservados | Natal-RN / 2021 | +55 (84)99911-5270 </p>
     </footer>
+
+    <script type="text/javascript" src="capslock.js"></script>
 </body>
 
 </html>
