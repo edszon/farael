@@ -82,13 +82,19 @@
 }
 
 .i {
-    float: right;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: row;
+    z-index: 999;
+    display: inline-block;
 }
 
 #icone {
     display: none;
     color: white;
-    float: left;
 }
 
 .form input:-webkit-autofill {
