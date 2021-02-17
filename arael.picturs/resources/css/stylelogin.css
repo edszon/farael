@@ -53,49 +53,40 @@
     margin-bottom: 25px;
 }
 
-.capslock {
-    border: 2px solid white;
-    max-width: 335px;
-    height: 40px;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-}
-
-.capslock input {
-    text-align: center;
-    float: right;
-}
-
-.capslock i {
-    float: left;
-    text-align: center;
-}
-
 .form input {
     background-color: rgba(0, 0, 0, 1);
     border: 1px solid white;
     align-items: center;
     display: flex;
-    margin-top: 5px;
     height: 30px;
-    width: 100spx;
+    width: 280px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     text-align: center;
     color: white;
     outline: 0;
+    margin-bottom: 3px;
 }
 
 .form input:nth-of-type(2) {
-    text-align: center;
-    display: block;
+    max-width: 320px;
+    min-height: 30px;
+    display: inline-block;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid white;
+}
+
+.i {
+    float: right;
 }
 
 #icone {
-    display: block;
+    display: none;
     color: white;
     float: left;
 }
