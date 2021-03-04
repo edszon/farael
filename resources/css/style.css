@@ -1,65 +1,89 @@
-
-body{
-	background-color: black;
+*
+{
+	margin:0;
+	padding:0;
 }
 
-header{
-margin-left:27%;
-margin-right: 27%;
-margin-top:7%;
-}
-header h1{
-	font-family: Courier New;
-	text-align: center;
-	font-size:70px;
-	color:white;
-	transition:color .7s;
-	
+body 
+{
+	background-color:black;
 }
 
-header p {
+.center 
+{
+	display:flex;
+	justify-content: center;
+}
+
+header
+{
 	font-family:Courier New;
-	font-size:20px;
+}
+
+#titulo
+{
+	color:white;
+	font-weight: bold;
+	font-size:70px;
 	text-align: center;
-	margin-top:-20px;
+	margin-top:70px;
 	transition: color .7s;
-	color:black;
 }
 
-header:hover p {
-	color:gray;
-}
-
-header:hover h1{
+header:hover #titulo 
+{
 	color:red;
 }
 
-.container{
+#legenda 
+{
+	color:gray;
+	font-size:20px;
+	text-align:center;
+	margin-top:8px;
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+header:hover #legenda 
+{
+	opacity:100;
+}
+
+.container
+{
+	margin-top:40px;
 	padding:25px;
-	margin-top:3%;
-	margin-left:35%;
-	margin-right:35%;
 	border-style: solid;
 	border-color:gray;
 	border-radius:10px;
 	transition:border-color .4s;
+	width:430px;
 }
 
-.container:hover{
-border-color:red;
-}
-
-a:link {
+.container p
+{
+	font-size:30px;
 	color:white;
-	text-decoration: none;
+	font-family:Courier new;
+	margin-bottom:20px;
+	transition: color .7s;
 }
 
-a:visited {
-	color:white;
-	text-decoration: none;
+.container:hover p
+{
+	color:red;
 }
 
-.container a {
+
+.container:hover
+{
+	border-color:red;
+}
+
+.container a
+{
+	margin-left:16px;
 	color:white;
 	font-family: Courier New;
 	font-size:15px;
@@ -68,31 +92,52 @@ a:visited {
 	text-decoration: none;
 }
 
-.container a:hover {
+.container a:hover 
+{
 	color:red;
 }
 
-footer {
-	margin-top:8%;
-	position: relative;
-	color: gray;
-	text-align: center;
-	font-family: courier new;
+.empty 
+{
+	margin-left:16px;
+	color:gray;
+	font-family: Courier New;
+	font-size:15px;
+	line-height: 25px;
 }
 
-.secret{
-	margin-top:150px;
+footer
+{
+	margin-top:100px;
 	text-align: center;
 }
 
-#secret {
+footer p
+{
+	color:gray;
+	margin:10px;
+	font-family: Courier New;
+}
+
+.secret
+{
+	margin-top:60px;
 	text-align: center;
+}
+
+.secret a
+{
 	color:black;
-	transition: color 1s;
-	text-align: center;
-	font-family: courier new;
+	font-family: Courier New;
+	transition: color .7s;
+	text-decoration: none;
 }
 
-#secret:hover {
+.secret:hover a
+{
 	color:red;
 }
+
+
+
+
