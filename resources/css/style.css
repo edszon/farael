@@ -64,10 +64,11 @@ header:hover #legenda
 	border-style: solid;
 	border-color:gray;
 	border-radius:10px;
-	transition:border-color .4s;
+	transition:border-color .4s, max-height .7s;
 	width:430px;
 	background-color:rgba(0,0,0,0.17);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	overflow:hidden;
 }
 
 .container p
@@ -88,8 +89,9 @@ header:hover #legenda
 
 .container:hover
 {
-	border-color:#bd5151;
+	border-color:#bd5151;	
 }
+
 
 .container a
 {
@@ -174,7 +176,15 @@ and (max-width : 600px)
 		transform: scale(0.9);
 		margin-top:0;
 		text-align:center;
+		transition:border-color .4s, max-height .7s;
+		max-height:25px;
 	}
+
+	.container:hover
+	{
+		max-height:20em;	
+	}
+
 
 	.container a
 	{
@@ -190,14 +200,19 @@ and (max-width : 600px)
 
 	footer
 	{
-		margin-top:15px;
+		margin-top:30px;
 	}
 
 	footer p
 	{
-		font-size:11px;
+		font-size:10px;
 	}
 }
+
+
+/*collapse*/
+
+
 
 
 
