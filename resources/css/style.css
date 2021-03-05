@@ -182,7 +182,7 @@ and (max-width : 600px)
 
 	.container:hover
 	{
-		max-height:20em;	
+		max-height:400px;	
 	}
 
 
