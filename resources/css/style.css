@@ -6,7 +6,13 @@
 
 body 
 {
-	background-color:black;
+	background: repeating-linear-gradient(
+  45deg,
+  #141414,
+  #141414 10px,
+  #171717 10px,
+  #171717 20px
+);
 }
 
 .center 
@@ -22,17 +28,18 @@ header
 
 #titulo
 {
-	color:white;
+	color:#bababa;
 	font-weight: bold;
 	font-size:70px;
 	text-align: center;
 	margin-top:70px;
 	transition: color .7s;
+
 }
 
 header:hover #titulo 
 {
-	color:red;
+	color:#bd5151;
 }
 
 #legenda 
@@ -59,10 +66,13 @@ header:hover #legenda
 	border-radius:10px;
 	transition:border-color .4s;
 	width:430px;
+	background-color:rgba(0,0,0,0.17);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .container p
 {
+	font-weight: bold;
 	font-size:30px;
 	color:white;
 	font-family:Courier new;
@@ -72,13 +82,13 @@ header:hover #legenda
 
 .container:hover p
 {
-	color:red;
+	color:#bd5151;
 }
 
 
 .container:hover
 {
-	border-color:red;
+	border-color:#bd5151;
 }
 
 .container a
@@ -94,7 +104,7 @@ header:hover #legenda
 
 .container a:hover 
 {
-	color:red;
+	color:#bd5151;
 }
 
 .empty 
@@ -104,6 +114,7 @@ header:hover #legenda
 	font-family: Courier New;
 	font-size:15px;
 	line-height: 25px;
+	font-weight:bold;	
 }
 
 footer
@@ -114,9 +125,11 @@ footer
 
 footer p
 {
-	color:gray;
+	color:#bababa;
 	margin:10px;
 	font-family: Courier New;
+	font-weight: bold;
+	font-size:13px;
 }
 
 .secret
@@ -127,7 +140,7 @@ footer p
 
 .secret a
 {
-	color:black;
+	color:#141414;
 	font-family: Courier New;
 	transition: color .7s;
 	text-decoration: none;
@@ -135,7 +148,7 @@ footer p
 
 .secret:hover a
 {
-	color:red;
+	color:#bd5151;
 }
 
 
