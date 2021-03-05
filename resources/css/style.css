@@ -177,7 +177,7 @@ and (max-width : 600px)
 		margin-top:0;
 		text-align:center;
 		transition:border-color .4s, max-height .7s;
-		max-height:25px;
+		max-height:33px;
 	}
 
 	.container:hover
