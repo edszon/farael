@@ -140,15 +140,16 @@ footer p
 
 .secret a
 {
-	color:#141414;
+	opacity:0;
+	color:#bd5151;
 	font-family: Courier New;
-	transition: color .7s;
+	transition: opacity .7s;
 	text-decoration: none;
 }
 
 .secret:hover a
 {
-	color:#bd5151;
+	opacity:100;
 }
 
 
