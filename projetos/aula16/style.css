@@ -1,0 +1,69 @@
+.center
+{
+	text-align: center;
+}
+
+
+#body
+{
+	margin-top:30px;
+	display: flex;
+	justify-content: center;
+}
+
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: 330px 330px;
+  grid-template-rows: 250px 250px;
+  gap: 0px 30px;
+  grid-template-areas:
+    "area1 area3"
+    "area2 area4";
+}
+.area1 { grid-area: area1; }
+.area2 { grid-area: area2; }
+.area3 { grid-area: area3; }
+.area4 { grid-area: area4; }
+
+.container
+{
+	border: 1px solid #95a4a5;
+	text-align: center;
+	font-family: Arial;
+	overflow: hidden;
+}
+
+.container p:first-of-type
+{
+	margin-top: 0px;
+	padding: 13px 0px;
+	background-color: #95a4a5;
+	color:white;
+	font-size: 20px;
+}
+
+.container p:nth-of-type(2)
+{
+	color:black;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.container span
+{
+	font-family: Helvetica;
+	font-size:12px;
+	margin-bottom: 30px
+}
+
+.assinar 
+{
+   color: #FFFFFF;
+   font-family: Helvetica;
+   font-size: 12px;
+   padding: 9px 13px;
+   background-color: #127D00;
+   text-decoration: none;
+   text-align: center;
+}
