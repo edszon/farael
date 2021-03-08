@@ -67,3 +67,26 @@
    text-decoration: none;
    text-align: center;
 }
+.separador {
+    display: table;
+    width: 100%;
+  }
+  
+.s-left{
+      display:table-cell;
+      width:25%;
+  }
+.s-right {
+    display: table-cell;
+    width: 75%;
+  }
+  
+.line{
+    border-bottom:1px solid black;
+    margin-bottom:77px;
+  }
+  
+.separador img {
+    margin: auto;
+    display: block;
+  }
