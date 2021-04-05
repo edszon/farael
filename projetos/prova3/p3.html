@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>prova 3</title>
+		<meta name="Author" content="Edson Luiz Cavalcanti Neto / 20191011110025">
+		<meta charset="utf-8">
+		<meta lang="pt-br">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			var aux = 0;
+			function getNumber() 
+			{
+			  aux++;
+			  var number = Math.floor(Math.random() * 10);
+			  var ul = document.getElementById("list");
+			  var li = document.createElement("li");
+			  var resultado = "Sorteio #" + aux + " = " + number;
+			  li.appendChild(document.createTextNode(resultado));
+			  ul.appendChild(li);
+			  $('#current').text(number);
+			}
+		</script>
+		<style>
+			#sorteio
+				{
+				   font-size:30px;
+				}
+
+			.botao {
+				   border-radius: 0;
+				   height: 100px;
+				   color:black;
+				   line-height: 100px;
+				   font-family: Arial;
+				   width: 100px;
+				   font-size: 15px;
+				   font-weight: 100;
+				   padding: 41px;
+				   background-color: #DFDFDF;
+				   text-decoration: none;
+				   display: inline-block;
+				   cursor: pointer;
+				   text-align: center;
+				   margin-bottom: 15px;
+				}
+
+			#current
+				{
+				   font-weight: bold;
+				   margin:0;
+				   border: 1px solid red;
+				   border-bottom: none;
+				}
+
+			#list
+				{
+				   list-style: none;
+				   padding: 0;
+				   margin:0;
+				   border: 1px solid red;
+				}
+	</style>
+	</head>
+
+<body>
+	<a onclick="getNumber()" class="botao">Sorteio</a>
+	<br>
+	<div id="sorteio">
+		<p id="current">aperte o botão para começar o sorteio</p>
+		<ul id="list"></ul>
+	</div>
+</body>
+
+</html>
+
+
+
