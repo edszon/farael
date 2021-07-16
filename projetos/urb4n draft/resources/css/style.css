@@ -113,6 +113,18 @@ header
     margin:20px;
 }
 
+#wrapperhotday::-moz-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+#wrapperhotday::-moz-scrollbar-thumb {
+    background: #a8a6a8;
+    border-radius: 0;
+}
+#wrapperhotday::-moz-scrollbar-track {
+    background: black;
+    margin:20px;
+
 #caron
 {
   font-size:30px;
