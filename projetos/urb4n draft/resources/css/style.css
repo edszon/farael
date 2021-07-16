@@ -98,6 +98,7 @@ header
   flex-direction: row;
   overflow-x:scroll;
   scroll-behavior: smooth;
+  scrollbar-color: #a8a6a8 black;
 }
 
 #wrapperhotday::-webkit-scrollbar {
