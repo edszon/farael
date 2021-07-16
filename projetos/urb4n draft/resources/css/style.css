@@ -1,0 +1,205 @@
+*
+{
+  margin:0;
+  padding:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: Monument;
+  src: url(../fonts/monument.otf);
+}
+
+@font-face {
+  font-family: monumentlight;
+  src: url(../fonts/monumentlight.otf);
+}
+
+@font-face {
+  font-family: bhfont;
+  src: url(../fonts/bhfont.otf);
+}
+
+body
+{
+  background-color:#f2f2f2;
+}
+header
+{
+  background-color: black;
+  color:#f2f2f2;
+  height:75px;
+  display: flex;
+  align-items: center;
+  font-family: monumentlight;
+  justify-content:space-between;
+}
+
+#logo
+{
+  font-size:20px;
+  margin-left:110px;
+}
+
+#navbar
+{
+  font-family: monumentlight;
+  margin-right:100px;
+
+}
+
+#navbar a
+{
+  color:#cccccc;
+  text-decoration:none; 
+  padding:10px;
+  border:2px solid black;
+  border-radius: 0px;
+  transition: border 0.3s, background-color 0.3s;
+  background-color:black;
+}
+
+#navbar a:hover
+{
+  border:2px solid white;
+  background-color:#212121;
+}
+
+#hotday
+{
+  margin: 70px 100px 0px 100px;
+  background-color: #cccccc ;
+  padding:30px 0px 30px 0px;
+    
+  overflow-y:hidden;
+  transition:max-height 0.5s;
+}
+
+#collapse_wrapper
+{
+  display:flex;
+  justify-content: space-between;
+}
+
+#collapse_wrapper h1
+{
+  font-family: monumentlight;
+  font-size:30px;
+  font-weight: bold;
+  margin-left:30px;
+
+}
+
+
+#wrapperhotday
+{
+  margin-top:5px;
+  display: flex;    
+  flex-direction: row;
+  overflow-x:scroll;
+  scroll-behavior: smooth;
+}
+
+#wrapperhotday::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+#wrapperhotday::-webkit-scrollbar-thumb {
+    background: #a8a6a8;
+    border-radius: 0;
+}
+#wrapperhotday::-webkit-scrollbar-track {
+    background: black;
+    margin:20px;
+}
+
+#caron
+{
+  font-size:30px;
+  margin-right:35px;
+  text-decoration: none;
+  transition: transform 0.4s ease;
+}
+
+#caron:visited
+{
+  color:black;
+}
+
+.caronopen{
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+  transform-origin: 0.5em 0.5em;
+}
+
+
+.caronclosed
+{
+  transform:rotate(0deg);
+  transition: transform 0.4s ease;
+  transform-origin: 0.5em 0.5em;
+}
+
+
+.selection {
+    width:250px;
+    height:350px;
+    background-color:#bdbdbd;
+    margin:20px 20px 35px 20px;
+    flex: 1 0 auto; 
+    transition: background-color 0.5s ease;
+    position: relative;
+ }
+
+.product {
+  background-color: black;
+  height: 25px;
+  color:white;
+  font-family: monumentlight;
+  display: flex;
+  align-items: center;
+  padding:0px 0px 0px 7px;
+  font-size:13px;
+ }
+
+ .price
+ {
+  font-family: monumentlight;
+  font-size:20px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color:black;
+  margin:0px 25px 15px 0px;
+ }
+
+ .selection img {
+    object-fit: contain; 
+    width: 100%;
+    height: 100%; 
+    max-width: 230px;
+    max-height: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    display: block;
+    transition: opacity 0.5s ease;
+    position:relative;
+ }
+
+ .selection:hover {
+    background-color:#a8a6a8;
+    cursor:pointer;
+ }
+
+ .selection:hover img
+ {
+    opacity:0.5;
+ }
+
+  .selection:hover .price
+ {
+    opacity:1;
+ }
