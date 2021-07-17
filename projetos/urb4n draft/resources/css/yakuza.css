@@ -1,0 +1,52 @@
+.promotional1wrapper img
+{
+  object-fit: fill;
+  vertical-align:middle;
+  opacity:0.6;
+  transition: opacity 0.6s ease;
+}
+
+.promotional1wrapper
+{
+  display:flex;
+  flex-direction:column;
+}
+
+#promotional1
+{
+  overflow:hidden;
+  transition:max-height 0.6s ease;
+  max-height:385px;
+  width:1000px;
+  margin:0px 0px 0px 20px;
+}
+
+#promotional1 img
+{
+  width:1000px;
+}
+
+#promotional1:hover
+{
+  max-height:798px;
+}
+
+#promotional1legend
+{
+  border-top:4px solid black;
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  flex-direction: column;
+  font-family: monumentlight;
+  font-size:35px;
+  min-height:300px;
+  color:black;
+  background-color:#a8a6a8;
+}
+
+.promotional1wrapper:hover img
+{
+  opacity:0.85;
+}
+

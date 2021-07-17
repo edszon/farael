@@ -24,6 +24,7 @@ body
 {
   background-color:#f2f2f2;
 }
+
 header
 {
   background-color: black;
@@ -65,51 +66,31 @@ header
   background-color:#212121;
 }
 
+#pagewrapper
+{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  margin:30px 80px 30px 80px;
+}
+
+#promsectionwrapper
+{
+  display:block;
+}
+
+#promotionsection
+{
+  margin:40px;
+  display:flex;
+  flex-direction: row;
+}
+
 .promotional
 {
-  margin:40px 0px 0px 100px;
   display:block;
   background-color: black;
   outline:4px solid black;
-  border:0;
-}
-
-.promotionalwrapper img
-{
-  object-fit: fill;
-  vertical-align:middle;
-  opacity:0.6;
-  transition: opacity 0.6s ease;
-}
-
-.promotionalwrapper
-{
-  display:flex;
-  flex-direction:row;
-}
-
-#richbrian
-{
-  max-width:600px;
-  overflow:hidden;
-  transition:max-width 0.6s ease;
-}
-
-#richbrian:hover
-{
-  max-width:1100px;
-}
-
-#richbrianlegend
-{
-  min-width:500px;
-  display:flex;
-  justify-content:center;
-  background-color:#a8a6a8;
-  color:black;
-  align-items:center;
-  font-family: monumentlight;
-  font-size:35px;
 }
 
 .collectiontitle
@@ -119,15 +100,9 @@ header
   flex-direction:column;
 }
 
-.promotionalwrapper:hover img
-{
-  opacity:0.85;
-}
-
 
 #hotday
 {
-  margin: 70px 100px 40px 100px;
   background-color: #cccccc ;
   padding:30px 0px 30px 0px;
   outline:4px solid black;
@@ -274,3 +249,9 @@ header
  {
     opacity:1;
  }
+
+#sidethings
+{
+  display:flex;
+  flex-direction: column;
+}
