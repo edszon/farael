@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face 
+{
+    font-family: monumentlight;
+    src: url(../fonts/monumentlight.otf);
+}
+
+@font-face 
+{
+    font-family: coolvetica;
+    src: url(../fonts/coolvetica.ttf);
+}
+
+@font-face 
+{
+    font-family: mont;
+    src: url(../fonts/mont.otf);
+}
+
+header
+{
+    background:#242526;
+    height:65px;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:0px 350px 0px 350px;
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    border-bottom: 2px solid gray;
+    color:lightgray;
+    
+    
+}
+
+.logoheader
+{
+    margin-top:1px;
+    font-weight: bold;
+    font-size:25px;
+    font-family:monumentlight;
+    vertical-align: middle;
+
+}
+
+
+.wrapper
+{
+    margin-top:65px;
+    padding:35px 225px 0px 225px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:200%;
+}
+
+.searchtext
+{
+    width:500px;
+    height:30px;
+    padding:13px 15px 13px 18px;
+    outline-width: 0;
+    background-color:lightgray;
+    border:0;
+    border-radius: 25px;
+    font-family: coolvetica;
+    font-size:14px;
+    color:#1c1e21;
+    top:-5px;
+}
+
+.navbuttons
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:175px;
+    color:lightgray;
+}
+
+.divtitle
+{
+font-family:monumentlight;
+padding:25px 20px 20px 30px;;
+font-size:25px;
+color:lightgray;
+width:100%;
+background-color:#1c1e21;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    background: gray;
+
+}
+*::-webkit-scrollbar-track {
+    background: #1c1e21;
+    border-left:2px solid gray;
+}
+
+*::-moz-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+*::-moz-scrollbar-thumb {
+    background: #a8a6a8;
+    border-radius: 0;
+}
+*::-moz-scrollbar-track {
+    background: gray;
+}
+
+.shadow
+{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
