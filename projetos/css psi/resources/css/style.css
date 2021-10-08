@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a:link, a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+
 @font-face 
 {
     font-family: monumentlight;
@@ -37,6 +42,7 @@ header
     width:100%;
     border-bottom: 2px solid gray;
     color:lightgray;
+    z-index:10;
     
     
 }
@@ -48,8 +54,101 @@ header
     font-size:25px;
     font-family:monumentlight;
     vertical-align: middle;
+    cursor: pointer;
 
 }
+
+.userprofile
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userbar
+{
+    margin-top:30px;
+    background:#242526;
+    border-radius:25px;
+    border:2px solid gray;
+    position:absolute;
+    width:0px;
+    height:0px;
+    opacity:0%;
+    visibility: collapse;
+    overflow:hidden;
+}
+
+.userbaractive
+{
+    width:230px;
+    opacity:100%;
+    height:200px;
+    visibility:visible;
+}
+
+.notifications
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notificationbar
+{
+    margin-top:30px;
+    width:100px;
+    height:170px;
+    background:#242526;
+    border-radius:25px;
+    border:2px solid gray;
+    position:absolute;
+    width:0px;
+    height:0px;
+    opacity:0%;
+    visibility: collapse;
+    overflow:hidden;
+}
+
+.notificationbaractive
+{
+    width:300px;
+    height:500px;
+    opacity:100%;
+    visibility:visible;
+}
+
+.shopcart
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopcartbar
+{
+    margin-top:30px;
+    width:100px;
+    height:170px;
+    background:#242526;
+    border-radius:25px;
+    border:2px solid gray;
+    position:absolute;
+    width:0px;
+    height:0px;
+    opacity:0%;
+    visibility: collapse;
+    overflow:hidden;
+}
+
+.shopcartbaractive
+{
+    width:350px;
+    height:500px;
+    opacity:100%;
+    visibility:visible;
+}
+
 
 
 .wrapper
@@ -60,7 +159,6 @@ header
     display:flex;
     flex-direction: column;
     align-items: center;
-    height:200%;
 }
 
 .searchtext
@@ -90,8 +188,8 @@ header
 .divtitle
 {
 font-family:monumentlight;
-padding:25px 20px 20px 30px;;
-font-size:25px;
+padding:25px 20px 20px 30px;
+font-size:20px;
 color:lightgray;
 width:100%;
 background-color:#1c1e21;
@@ -125,6 +223,49 @@ background-color:#1c1e21;
 .shadow
 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*rodape*/
+
+#rodape
+{
+    margin-top:80px;
+    bottom:0;
+    width:100%;
+    background:#18191c;
+    padding:20px 300px 20px 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+.rodape--mainwrapper
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.rodapetitle
+
+{
+    font-size:25px;
+    font-family:monumentlight;
+    margin-bottom:10px;
+}
+
+.rodapeitem
+{
+    font-family:monumentlight;
+    font-size:15px;
+    width:300px;
+    background-color:#161617;
+    border-radius: 25px;
+    padding:30px;
+    color:gray;
+    height:400px;
+    margin:30px;
 }
 
 

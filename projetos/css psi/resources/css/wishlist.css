@@ -1,0 +1,22 @@
+body
+{
+    background:#1c1e21;
+}
+
+.wishlistwrapper
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#18191c;
+    padding:30px;
+    border-radius: 25px;
+    min-width:700px;
+    min-height: 500px;
+    font-family: monumentlight;
+    color:lightgray;
+    font-size:20px;
+    text-align: center;
+
+}

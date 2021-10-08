@@ -12,6 +12,13 @@ body
     background-repeat:no-repeat;   
     border-radius: 25px;
     margin-bottom:75px;
+    cursor: pointer;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
     
 }
 
@@ -36,7 +43,7 @@ body
 
 .offeritem
 {
-    height:295px;
+    height:275px;
     min-width:230px;
     background-color:#1c1e21;
     border-radius:25px;
@@ -51,6 +58,7 @@ body
     position:relative;
     border:2px solid #242526;
     transition: border 0.3s ease;
+    cursor: pointer;
 }
 
 .offeritem:hover
@@ -60,7 +68,7 @@ body
 
 .offeritem img
 {
-    margin-top:-135px;
+    margin-bottom:120px;
     max-width: 85%;
     max-height: 85%;
 }
@@ -70,7 +78,6 @@ body
     font-family: coolvetica;
     color:lightgray;
     background-color:#18191c;
-    z-index: 2;
     position:absolute;
     margin-top:170px;
     width:100%;
@@ -79,12 +86,109 @@ body
     font-size:15px;
 }
 
+.productname
+{
+    position:absolute;
+    z-index:0;
+}
+
 .pricetag
 {
-    margin-top:25px;
+    margin-top:50px;
+    z-index:1;
+    position:absolute;
     font-family:monumentlight;
     text-align: center;
+    font-size:16px;
 }
+
+.promsection2
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+
+}
+
+.promotional2 img
+{
+    max-width:120%;
+    min-height:100%;
+}
+
+.promotional2
+{
+    height:800px;
+    overflow:hidden;
+    width:700px;
+    margin-top:75px;
+    border-radius: 25px;
+    margin-right:75px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index:0;
+}
+
+.promotional3
+{
+    height:800px;
+    overflow:hidden;
+    width:1300px;
+    margin-top:75px;
+    border-radius: 25px;
+    cursor:pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index: 0;
+}
+
+.promotional3 img
+{
+    min-height:100%;
+}
+
+.releaselabel
+{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    font-family: monumentlight;
+    font-size:30px;
+    opacity:0%;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    position:absolute;
+}
+
+.releaselabel:hover
+{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    font-family: monumentlight;
+    font-size:30px;
+    opacity:100%;
+}
+
+.promotional
 
 .offerlist::-webkit-scrollbar {
     width: 10px;

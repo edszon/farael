@@ -1,0 +1,149 @@
+body
+{
+    background-color:#1c1e21;
+}
+
+.propicstuff
+{
+    padding:50px;
+    height:600px;
+    background-color:#18191c;
+    border-radius: 25px;
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 40px 0px 40px;   
+    font-family:monumentlight;
+    color:lightgray;
+    text-align: center;
+
+}
+
+
+.propicmains
+{
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.propicmains img
+{
+    max-width: 100%;
+}
+
+.meuspedidos
+{
+    width:700px;
+    max-height:600px;
+    background:#18191c;
+    border-radius: 25px;
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    font-family: monumentlight;
+}
+
+#propicwrapper
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.pedido 
+{
+    width:100%;
+    border-radius: 25px;
+    height:100px;
+    background-color:#242526;
+    padding:10px;
+    margin:10px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    overflow:hidden;
+}
+
+.leftproduct
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    color:lightgray;
+}
+
+.rightproduct
+{
+    font-family: coolvetica;
+    font-size:12px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    overflow:hidden;
+    text-align: right;
+}
+.productimg
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    height:80px;
+    width: 80px;
+    background-color:#18191c;
+    border-radius: 25px;
+    margin-right:10px;
+}
+
+.productimg img
+{
+    max-width:80%;
+}
+
+.pedidocarousel
+{
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    padding:20px;
+    border-radius: 25px;
+    border:2px solid gray;
+}
+
+.pedidocarousel::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.pedidocarousel::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+.pedidocarousel::-webkit-scrollbar-track {
+    background: #1c1e21;
+    margin:90px;
+    border-radius: 25px;
+    border:0;
+}
+
+.pedidocarousel::-moz-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.pedidocarousel::-moz-scrollbar-thumb {
+    background: gray;
+    border-radius: 25;
+}
+.pedidocarousel::-moz-scrollbar-track {
+    background: #1c1e21;
+    margin:40px 40px 20px 40px;
+}
